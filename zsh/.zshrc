@@ -141,32 +141,46 @@ gpx() {
 }
 
 gpa() {
-  # Sync with remote
-  git fetch && git pull --rebase || return 1
-  
-  # Launch UI for staging
+  local DOT_DIR="$HOME/Documents/dotfiles"
+  cd "$DOT_DIR" || return 1
+
+  # 1. Sync with remote first (prevents rebase errors)
+  # --autostash hides current modifications to allow the pull
+  git fetch && git pull --rebase --autostash || {
+    echo "❌ Sync failed. Resolve conflicts manually."
+    return 1
+  }
+
+  # 2. Launch UI for staging (Selection Phase)
   gitui
-  
-  # Generate AI message from staged changes
-  local ai_msg=$(git diff --staged | fabric -p create_git_commit)
-  
-  if [ -z "$ai_msg" ]; then
-    echo "Fabric failed to generate a message."
+
+  # 3. Verify something is actually staged
+  if git diff --cached --quiet; then
+    echo "No files staged. Aborting."
     return 1
   fi
 
-  # Show the message and ask for confirmation
-  echo "AI Suggested: $ai_msg"
-  echo -n "Confirm? (y/n): "
-  read choice
+  # 4. Generate AI Commit Message
+  echo "🤖 Fabric is analyzing your diff..."
+  local ai_msg=$(git diff --staged | fabric -p create_conventional_commit)
+
+  if [ -z "$ai_msg" ]; then
+    echo "❌ Fabric failed to generate a message."
+    return 1
+  fi
+
+  # 5. Clean and Confirm
+  # Strips 'git commit -m' and quotes if Fabric included them
+  local clean_msg=$(echo "$ai_msg" | sed -E 's/^git commit -m "//; s/"$//')
   
+  echo "✨ AI Suggestion: $clean_msg"
+  echo -n "Confirm commit and push? (y/n): "
+  read choice
+
   if [[ "$choice" == "y" ]]; then
-    # Extract just the message if Fabric outputs the full 'git commit -m' string
-    # This regex strips 'git commit -m "' from start and '"' from end
-    local clean_msg=$(echo "$ai_msg" | sed -e 's/^git commit -m "//' -e 's/"$//')
     git commit -m "$clean_msg" && git push
   else
-    echo "Commit aborted."
+    echo "🚫 Commit aborted."
   fi
 }
 
