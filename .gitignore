@@ -1,0 +1,9 @@
+
+# Ignore auto-generated / cache stuff
+*.bak
+*.tmp
+AutoLaunch*
+Scripts/               # ← only if you don't want to track your own scripts
+DynamicProfiles/       # ← same, often machine-specific
+# If you use shell integration or other generated files
+iterm2_shell_integration.*
