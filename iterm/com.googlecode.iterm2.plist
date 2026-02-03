@@ -806,7 +806,9 @@
 				<real>0.97999999999999998</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/macbookm1/Pictures/Wallpapers/EJG_1378.JPG</string>
+			<key>Background Image Mode</key>
+			<integer>2</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -846,10 +848,12 @@
 				<key>Red Component</key>
 				<real>0.74613857269287109</real>
 			</dict>
+			<key>Blend</key>
+			<real>0.14917883211678831</real>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<true/>
+			<false/>
 			<key>Blur Radius</key>
 			<real>9.9524386160714275</real>
 			<key>Bold Color</key>
@@ -1327,7 +1331,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.04861607142857137</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
