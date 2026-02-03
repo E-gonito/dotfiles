@@ -1,0 +1,12 @@
+bradlc.vscode-tailwindcss
+dbaeumer.vscode-eslint
+eamodio.gitlens
+esbenp.prettier-vscode
+github.copilot
+github.copilot-chat
+ms-azuretools.vscode-containers
+ms-azuretools.vscode-docker
+ms-vscode.cpptools-themes
+rvest.vs-code-prettier-eslint
+usernamehw.errorlens
+vscodevim.vim
