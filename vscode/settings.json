@@ -1,1 +1,45 @@
-/Users/macbookm1/Documents/dotfiles/vscode/settings.json
+{
+  // 1. Visual De-cluttering
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "left",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "window.menuBarVisibility": "toggle",
+  "workbench.statusBar.visible": true,
+  "editor.breadcrumbs.enabled": false,
+  "explorer.compactFolders": true,
+
+  // 2. Core Editor Mechanics
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+
+  // 3. Navigation & AI Workflow
+  "workbench.list.keyboardNavigation": "filter",
+  "terminal.integrated.scrollback": 50000,
+  "terminal.integrated.macOptionIsMeta": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "editor.suggestSelection": "first",
+
+  // 4. Terminal Consistency
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.gpuAcceleration": "on",
+
+  // 5. Extension Tuning (Requires relevant extensions installed)
+  "vim.useSystemClipboard": true,
+  "gitlens.currentLine.enabled": false,
+  "errorLens.enabled": true
+}
