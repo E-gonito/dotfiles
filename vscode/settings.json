@@ -2,7 +2,7 @@
   // 1. Visual De-cluttering
   "editor.minimap.enabled": false,
   "workbench.activityBar.location": "hidden",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "window.menuBarVisibility": "toggle",
@@ -22,7 +22,8 @@
   "editor.guides.bracketPairs": "active",
 
   // 3. Navigation & AI Workflow
-  "workbench.list.keyboardNavigation": "filter",
+  "workbench.list.defaultFindMode": "filter",
+  "workbench.list.typeNavigationMode": "automatic",
   "terminal.integrated.scrollback": 50000,
   "terminal.integrated.macOptionIsMeta": true,
   "editor.quickSuggestions": {
@@ -41,5 +42,6 @@
   // 5. Extension Tuning (Requires relevant extensions installed)
   "vim.useSystemClipboard": true,
   "gitlens.currentLine.enabled": false,
-  "errorLens.enabled": true
+  "errorLens.enabled": true,
+  "workbench.colorTheme": "Night Owl Light"
 }

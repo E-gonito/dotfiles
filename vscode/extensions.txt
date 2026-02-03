@@ -8,5 +8,6 @@ ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-vscode.cpptools-themes
 rvest.vs-code-prettier-eslint
+sdras.night-owl
 usernamehw.errorlens
 vscodevim.vim
