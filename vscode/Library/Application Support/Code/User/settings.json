@@ -1,7 +1,6 @@
 {
   // 1. Visual De-cluttering
   "editor.minimap.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",

@@ -218,3 +218,4 @@ alias ni="bun install"
 alias nr="bun run"
 alias nx="bunx" # Replaces npx
 alias nd="bun dev"
+export PATH="$HOME/.local/bin:$PATH"
