@@ -8,7 +8,6 @@
   "workbench.statusBar.visible": true,
   "editor.breadcrumbs.enabled": false,
   "explorer.compactFolders": true,
-
   // 2. Core Editor Mechanics
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
@@ -19,7 +18,6 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": "active",
-
   // 3. Navigation & AI Workflow
   "workbench.list.defaultFindMode": "filter",
   "workbench.list.typeNavigationMode": "automatic",
@@ -31,16 +29,24 @@
     "strings": "on"
   },
   "editor.suggestSelection": "first",
-
   // 4. Terminal Consistency
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.gpuAcceleration": "on",
-
   // 5. Extension Tuning (Requires relevant extensions installed)
   "vim.useSystemClipboard": true,
   "gitlens.currentLine.enabled": false,
   "errorLens.enabled": true,
-  "workbench.colorTheme": "Night Owl Light"
+  "workbench.colorTheme": "Night Owl Light",
+  "github.copilot.chat.agent.currentEditorContext.enabled": false,
+  "github.copilot.chat.backgroundAgent.enabled": false,
+  "github.copilot.chat.claudeAgent.enabled": false,
+  "github.copilot.chat.cloudAgent.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
