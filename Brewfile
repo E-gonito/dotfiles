@@ -1,20 +1,42 @@
+# Cross-platform make
+brew "cmake"
+# Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Open-source framework for augmenting humans using AI
 brew "fabric-ai"
+# Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Image format providing lossless and lossy compression for web images
 brew "webp"
+# Interpreter for PostScript and PDF
 brew "ghostscript"
+# Git extension for versioning large files
 brew "git-lfs"
+# Blazing fast terminal-ui for git written in rust
 brew "gitui"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# Port scanning utility for large networks
 brew "nmap"
+# PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Open source continuous file synchronization application
 brew "syncthing", restart_service: :changed
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# GUI companion app for Homebrew
 cask "cork"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Clipboard manager
 cask "maccy"
+# Multi-platform VNC client and server
 cask "tigervnc"
 vscode "anthropic.claude-code"
 vscode "bradlc.vscode-tailwindcss"
