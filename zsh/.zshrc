@@ -219,3 +219,11 @@ alias nr="bun run"
 alias nx="bunx" # Replaces npx
 alias nd="bun dev"
 export PATH="$HOME/.local/bin:$PATH"
+
+# mise
+eval "$(mise activate zsh)"
+
+# shutdown
+alias reboot='brew services stop postgresql@16 && sudo reboot'
+alias shutdown='brew services stop postgresql@16 && sudo shutdown -h now'
+

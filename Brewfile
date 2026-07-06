@@ -1,7 +1,13 @@
+# Automatic configure script builder
+brew "autoconf"
+# Toolchain of the web
+brew "biome"
 # Cross-platform make
 brew "cmake"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Library for command-line editing
+brew "readline"
 # Open-source framework for augmenting humans using AI
 brew "fabric-ai"
 # Like neofetch, but much faster because written mostly in C
@@ -14,14 +20,28 @@ brew "webp"
 brew "ghostscript"
 # Git extension for versioning large files
 brew "git-lfs"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# YAML Parser
+brew "libyaml"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Small build system for use with gyp or CMake
 brew "ninja"
 # Port scanning utility for large networks
 brew "nmap"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
+# Object-relational database system
+brew "postgresql@16", restart_service: :changed, link: true
+# Safe, concurrent, practical language
+brew "rust"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Open source continuous file synchronization application
@@ -39,6 +59,7 @@ cask "maccy"
 # Multi-platform VNC client and server
 cask "tigervnc"
 vscode "anthropic.claude-code"
+vscode "biomejs.biome"
 vscode "bradlc.vscode-tailwindcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
