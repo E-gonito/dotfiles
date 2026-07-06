@@ -4,6 +4,7 @@ bradlc.vscode-tailwindcss
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
+eye2gene.vscode-e2e-file-reader
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-python.debugpy

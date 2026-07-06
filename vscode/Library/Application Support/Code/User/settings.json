@@ -1,73 +1,76 @@
 {
-  // 1. Visual De-cluttering
-  "editor.minimap.enabled": false,
-  "workbench.sideBar.location": "right",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "window.menuBarVisibility": "toggle",
-  "workbench.statusBar.visible": true,
-  "editor.breadcrumbs.enabled": false,
-  "explorer.compactFolders": true,
-  // 2. Core Editor Mechanics
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.guides.bracketPairs": "active",
-  // 3. Navigation & AI Workflow
-  "workbench.list.defaultFindMode": "filter",
-  "workbench.list.typeNavigationMode": "automatic",
-  "terminal.integrated.scrollback": 50000,
-  "terminal.integrated.macOptionIsMeta": true,
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "on"
-  },
-  "editor.suggestSelection": "first",
-  // 4. Terminal Consistency
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.gpuAcceleration": "on",
-  // 5. Extension Tuning (Requires relevant extensions installed)
-  "vim.useSystemClipboard": true,
-  "gitlens.currentLine.enabled": false,
-  "errorLens.enabled": true,
-  "workbench.colorTheme": "Night Owl Light",
-  "github.copilot.chat.agent.currentEditorContext.enabled": false,
-  "github.copilot.chat.backgroundAgent.enabled": false,
-  "github.copilot.chat.claudeAgent.enabled": false,
-  "github.copilot.chat.cloudAgent.enabled": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "editor.accessibilitySupport": "off",
-  "gitlens.defaultCurrentUserNameStyle": "name",
-  "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/microsoft/vscode/": true,
-    "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
-    "https://developer.microsoft.com/json-schemas/": true,
-    "https://biomejs.dev": true
-  },
-  "[typescript]": {
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.formatOnSave": true
-  },
-  "editor.defaultFormatter": "biomejs.biome"
+	// 1. Visual De-cluttering
+	"editor.minimap.enabled": false,
+	"workbench.sideBar.location": "right",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.scrollbar.horizontal": "hidden",
+	"window.menuBarVisibility": "toggle",
+	"workbench.statusBar.visible": true,
+	"editor.breadcrumbs.enabled": false,
+	"explorer.compactFolders": true,
+	// 2. Core Editor Mechanics
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "explicit"
+	},
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.guides.bracketPairs": "active",
+	// 3. Navigation & AI Workflow
+	"workbench.list.defaultFindMode": "filter",
+	"workbench.list.typeNavigationMode": "automatic",
+	"terminal.integrated.scrollback": 50000,
+	"terminal.integrated.macOptionIsMeta": true,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": "on"
+	},
+	"editor.suggestSelection": "first",
+	// 4. Terminal Consistency
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.gpuAcceleration": "on",
+	// 5. Extension Tuning (Requires relevant extensions installed)
+	"vim.useSystemClipboard": true,
+	"gitlens.currentLine.enabled": false,
+	"errorLens.enabled": true,
+	"workbench.colorTheme": "Night Owl Light",
+	"github.copilot.chat.agent.currentEditorContext.enabled": false,
+	"github.copilot.chat.backgroundAgent.enabled": false,
+	"github.copilot.chat.claudeAgent.enabled": false,
+	"github.copilot.chat.cloudAgent.enabled": false,
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"editor.accessibilitySupport": "off",
+	"gitlens.defaultCurrentUserNameStyle": "name",
+	"json.schemaDownload.trustedDomains": {
+		"https://schemastore.azurewebsites.net/": true,
+		"https://raw.githubusercontent.com/microsoft/vscode/": true,
+		"https://raw.githubusercontent.com/devcontainers/spec/": true,
+		"https://www.schemastore.org/": true,
+		"https://json.schemastore.org/": true,
+		"https://json-schema.org/": true,
+		"https://developer.microsoft.com/json-schemas/": true,
+		"https://biomejs.dev": true
+	},
+	// 4. Biome formatting
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"editor.defaultFormatter": "biomejs.biome",
+	// 5. vscode-oct-viewer extension
+	"e2eFileReader.crystalEyePath": "/Users/macbookm1/.local/bin/crystal-eye"
 }

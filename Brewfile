@@ -1,11 +1,15 @@
 # Automatic configure script builder
 brew "autoconf"
+# Garbage collector for C and C++
+brew "bdw-gc"
 # Toolchain of the web
 brew "biome"
 # Cross-platform make
 brew "cmake"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# JPEG image codec that aids compression and decompression
+brew "jpeg-turbo"
 # Library for command-line editing
 brew "readline"
 # Open-source framework for augmenting humans using AI
@@ -14,6 +18,8 @@ brew "fabric-ai"
 brew "fastfetch"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # Interpreter for PostScript and PDF
@@ -26,6 +32,8 @@ brew "openssl@3"
 brew "gitui"
 # GNU multiple precision arithmetic library
 brew "gmp"
+# C library for reading and writing PNG format files
+brew "libspng"
 # YAML Parser
 brew "libyaml"
 # Polyglot runtime manager (asdf rust clone)
@@ -64,6 +72,7 @@ vscode "bradlc.vscode-tailwindcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
+vscode "eye2gene.vscode-e2e-file-reader"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
