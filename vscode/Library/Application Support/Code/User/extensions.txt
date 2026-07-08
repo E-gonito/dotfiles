@@ -23,6 +23,7 @@ ms-vscode.remote-explorer
 rust-lang.rust-analyzer
 rvest.vs-code-prettier-eslint
 sdras.night-owl
+shd101wyy.markdown-preview-enhanced
 tailscale.vscode-tailscale
 tomoki1207.pdf
 usernamehw.errorlens
