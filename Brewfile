@@ -64,6 +64,8 @@ cask "cork"
 cask "iterm2"
 # Clipboard manager
 cask "maccy"
+# System monitor for the menu bar
+cask "stats"
 # Multi-platform VNC client and server
 cask "tigervnc"
 vscode "anthropic.claude-code"
