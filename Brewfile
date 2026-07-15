@@ -54,6 +54,8 @@ brew "rust"
 brew "stow"
 # Open source continuous file synchronization application
 brew "syncthing", restart_service: :changed
+# Terminal multiplexer
+brew "tmux"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
