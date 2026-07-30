@@ -235,3 +235,8 @@ alias shutdown='brew services stop postgresql@16 && sudo shutdown -h now'
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/macbookm1/.lmstudio/bin"
+# End of LM Studio CLI section
+

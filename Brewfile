@@ -1,3 +1,5 @@
+# Aquarium animation in ASCII art
+brew "asciiquarium"
 # Automatic configure script builder
 brew "autoconf"
 # Garbage collector for C and C++
@@ -16,6 +18,10 @@ brew "readline"
 brew "fabric-ai"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -26,8 +32,6 @@ brew "webp"
 brew "ghostscript"
 # Git extension for versioning large files
 brew "git-lfs"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
 # GNU multiple precision arithmetic library
@@ -101,4 +105,5 @@ vscode "tomoki1207.pdf"
 vscode "usernamehw.errorlens"
 vscode "vscodevim.vim"
 cargo "rustlings"
+uv "koedeck", source: "git+https://github.com/E-gonito/koedeck.git"
 npm "corepack"

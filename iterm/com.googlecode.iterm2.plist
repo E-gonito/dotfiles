@@ -31,7 +31,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<false/>
+	<true/>
 	<key>DimOnlyText</key>
 	<true/>
 	<key>GlobalKeyMap</key>
@@ -812,7 +812,7 @@
 				<real>0.97999999999999998</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string>/Users/macbookm1/Pictures/Wallpapers/EJG_1378.JPG</string>
+			<string>/Users/macbookm1/Pictures/Wallpapers/EJG_1401.JPG</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
 			<key>Badge Color</key>
@@ -855,13 +855,13 @@
 				<real>0.74613857269287109</real>
 			</dict>
 			<key>Blend</key>
-			<real>0.14917883211678831</real>
+			<real>0.14871806569343063</real>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>9.9524386160714275</real>
+			<real>23.419414042285688</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -987,6 +987,8 @@
 				<key>Red Component</key>
 				<real>0.52338262643729649</real>
 			</dict>
+			<key>Cursor Shadow</key>
+			<true/>
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1393,16 +1395,20 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.45227705792682926</real>
+	<real>0.30050959598883353</real>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TerminalVMargin</key>
 	<integer>2</integer>
+	<key>UseBorder</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>kCPKSelectionViewPreferredModeKey</key>
