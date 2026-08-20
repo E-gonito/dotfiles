@@ -34,6 +34,8 @@ brew "ghostscript"
 brew "git-lfs"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
+# Render markdown on the CLI
+brew "glow"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # C library for reading and writing PNG format files
