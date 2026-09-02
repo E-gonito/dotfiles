@@ -1,3 +1,4 @@
+tap "samtay/tui"
 # Aquarium animation in ASCII art
 brew "asciiquarium"
 # Automatic configure script builder
@@ -14,6 +15,8 @@ brew "cowsay"
 brew "jpeg-turbo"
 # Library for command-line editing
 brew "readline"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Open-source framework for augmenting humans using AI
 brew "fabric-ai"
 # Like neofetch, but much faster because written mostly in C
@@ -26,10 +29,10 @@ brew "ffmpeg"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
+# Distributed revision control system
+brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
 # Blazing fast terminal-ui for git written in rust
@@ -38,12 +41,20 @@ brew "gitui"
 brew "glow"
 # GNU multiple precision arithmetic library
 brew "gmp"
+# Library for USB device access
+brew "libusb"
+# GNU grep, egrep and fgrep
+brew "grep"
 # C library for reading and writing PNG format files
 brew "libspng"
 # YAML Parser
 brew "libyaml"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
 # Small build system for use with gyp or CMake
 brew "ninja"
 # Port scanning utility for large networks
@@ -62,12 +73,14 @@ brew "stow"
 brew "syncthing", restart_service: :changed
 # Terminal multiplexer
 brew "tmux"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Tetris in your terminal
+brew "samtay/tui/tetris", trusted: true
 # GUI companion app for Homebrew
 cask "cork"
+# Game of dungeon exploration, combat and magic
+cask "dungeon-crawl-stone-soup-console"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Clipboard manager

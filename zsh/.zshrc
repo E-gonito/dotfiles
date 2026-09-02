@@ -240,3 +240,4 @@ alias shutdown='brew services stop postgresql@16 && sudo shutdown -h now'
 export PATH="$PATH:/Users/macbookm1/.lmstudio/bin"
 # End of LM Studio CLI section
 
+alias crawl="/Applications/Dungeon\ Crawl\ Stone\ Soup\ -\ Console.app/Contents/Resources/crawl"
