@@ -72,5 +72,6 @@
 	},
 	"editor.defaultFormatter": "biomejs.biome",
 	// 5. vscode-oct-viewer extension
-	"e2eFileReader.crystalEyePath": "/Users/macbookm1/.local/bin/crystal-eye"
+	"e2eFileReader.crystalEyePath": "/Users/macbookm1/.local/bin/crystal-eye",
+	"claudeCode.preferredLocation": "panel"
 }

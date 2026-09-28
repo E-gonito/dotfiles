@@ -125,7 +125,8 @@ export PATH="/Users/macbookm1/.antigravity/antigravity/bin:$PATH"
 
 gpx() {
   # --autostash handles the "index contains changes" error by temporary stashing them
-  git fetch && git pull --rebase --autostash || {
+  # --no-rebase: merge (fast-forwards when possible); rebase flattens merges and replays every local commit
+  git fetch && git pull --no-rebase --autostash || {
     echo "❌ Pull failed. Conflict detected."
     return 1
   }
@@ -150,7 +151,7 @@ gpa() {
 
   # 1. Sync with remote first (prevents rebase errors)
   # --autostash hides current modifications to allow the pull
-  git fetch && git pull --rebase --autostash || {
+  git fetch && git pull --no-rebase --autostash || {
     echo "❌ Sync failed. Resolve conflicts manually."
     return 1
   }
@@ -194,7 +195,7 @@ dots() {
 
   # Step A: Sync with remote BEFORE we change the Brewfile/extensions
   # This prevents the "index contains changes" error
-  git fetch && git pull --rebase --autostash
+  git fetch && git pull --no-rebase --autostash
 
   # Step B: Clean and Update
   find . -name ".DS_Store" -delete
@@ -241,3 +242,30 @@ export PATH="$PATH:/Users/macbookm1/.lmstudio/bin"
 # End of LM Studio CLI section
 
 alias crawl="/Applications/Dungeon\ Crawl\ Stone\ Soup\ -\ Console.app/Contents/Resources/crawl"
+
+
+# AI agent stack: 9router (+ Headroom compression) -> OpenHands
+# Set NINEROUTER_API_KEY and OPENHANDS_MODEL (e.g. openai/<model id from 9router>) in ~/.zshenv
+openhands() {
+  if ! docker info >/dev/null 2>&1; then
+    echo "starting Docker Desktop"
+    open -a Docker
+    for i in {1..60}; do docker info >/dev/null 2>&1 && break; sleep 2; done
+    docker info >/dev/null 2>&1 || { echo "Docker did not start"; return 1; }
+  fi
+  if ! lsof -iTCP:20128 -sTCP:LISTEN -nP >/dev/null 2>&1; then
+    echo "starting 9router (with Headroom) on :20128"
+    9router --no-browser --tray --skip-update >/dev/null 2>&1 &
+    for i in {1..30}; do lsof -iTCP:20128 -sTCP:LISTEN -nP >/dev/null 2>&1 && break; sleep 1; done
+  else
+    echo "9router already running on :20128"
+  fi
+  docker run -it --rm \
+    -p 8000:8000 \
+    -e LLM_BASE_URL=http://host.docker.internal:20128/v1 \
+    -e LLM_API_KEY="${NINEROUTER_API_KEY:-}" \
+    -e LLM_MODEL="${OPENHANDS_MODEL:-}" \
+    -v ~/.openhands:/home/openhands/.openhands \
+    -v ~/projects:/projects \
+    ghcr.io/openhands/agent-canvas:latest
+}

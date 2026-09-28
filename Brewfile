@@ -13,16 +13,20 @@ brew "cmake"
 brew "cowsay"
 # JPEG image codec that aids compression and decompression
 brew "jpeg-turbo"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3", link: true
 # Image format providing lossless and lossy compression for web images
 brew "webp"
-# Library for command-line editing
-brew "readline"
+# OFFIS DICOM toolkit command-line utilities
+brew "dcmtk"
+# Library for USB device access
+brew "libusb"
+# FlightAware ADS-B Ground Station System for SDRs
+brew "dump1090-fa"
 # Open-source framework for augmenting humans using AI
 brew "fabric-ai"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -41,8 +45,6 @@ brew "git-lfs"
 brew "gitui"
 # Render markdown on the CLI
 brew "glow"
-# Library for USB device access
-brew "libusb"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Package compiler and linker metadata toolkit
@@ -77,10 +79,14 @@ brew "stow"
 brew "syncthing", restart_service: :changed
 # Image processing library
 brew "vips"
+# Terminal based YouTube player and downloader
+brew "yewtube"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Tetris in your terminal
 brew "samtay/tui/tetris", trusted: true
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # GUI companion app for Homebrew
 cask "cork"
 # Game of dungeon exploration, combat and magic
@@ -124,5 +130,10 @@ vscode "tomoki1207.pdf"
 vscode "usernamehw.errorlens"
 vscode "vscodevim.vim"
 cargo "rustlings"
+uv "headroom-ai[code,proxy]"
 uv "koedeck", source: "git+https://github.com/E-gonito/koedeck.git"
+npm "9router"
+npm "better-sqlite3"
 npm "corepack"
+npm "sql.js"
+npm "systray2"
